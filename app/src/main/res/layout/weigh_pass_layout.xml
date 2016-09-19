@@ -1,0 +1,119 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+
+    android:id="@+id/loginlayout"
+
+    android:layout_height="match_parent"
+    android:layout_width="match_parent"
+
+    android:paddingBottom="16dp"
+    android:background="@drawable/sri_pass_background_gradient"
+    android:paddingLeft="0dp"
+    android:paddingRight="0dp"
+    android:paddingTop="0dp"
+    >
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:background="@android:color/transparent"
+        >
+
+
+        <!-- HORIZONTAL layout -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+
+            android:background="#37A760"
+            android:paddingBottom="10dp"
+            android:paddingTop="10dp"
+            android:paddingLeft="10dp"
+            >
+
+            <!-- SRI LOGO -->
+            <ImageView
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+
+                android:layout_gravity="center_vertical|left"
+
+                android:background="@drawable/sri_logo"
+                />
+
+            <!-- HORIZONTAL GAP -->
+            <View
+                android:layout_width="0dp"
+                android:layout_height="40dp"
+                android:layout_weight="1"
+                />
+
+
+        </LinearLayout>
+
+        <!-- vertical gap above PASS text -->
+        <View
+            android:layout_width="0dp"
+            android:layout_height="60dp"
+            android:layout_weight="1"
+            />
+
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_marginTop="0dp"
+            android:layout_marginBottom="0dp"
+
+            android:layout_gravity="center_horizontal"
+            android:gravity="center_horizontal"
+
+            android:text="PASS"
+            android:textColor="#FFF"
+            android:textSize="80sp"
+            android:textStyle="normal"
+            android:typeface="sans" />
+
+        <!-- vertical gap below PASS text -->
+        <View
+            android:layout_width="0dp"
+            android:layout_height="50dp"
+            android:layout_weight="1"
+            />
+
+        <!-- SRI logo -->
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:background="@android:color/transparent"
+            >
+
+            <ImageView
+                android:layout_width="fill_parent"
+                android:layout_height="100sp"
+                android:layout_alignParentTop="true"
+                android:layout_centerHorizontal="true"
+                android:background="@android:color/transparent"
+                android:src="@drawable/sri_logo" />
+        </LinearLayout>
+
+        <!-- vertical gap under SRI logo -->
+        <View
+            android:layout_width="0dp"
+            android:layout_height="50dp"
+            android:layout_weight="1"
+            />
+
+
+    </LinearLayout>
+
+        <!-- vertical gap under SRI logo -->
+        <View
+            android:layout_width="0dp"
+            android:layout_height="50dp"
+            android:layout_weight="1"
+            />
+
+
+
+</RelativeLayout>

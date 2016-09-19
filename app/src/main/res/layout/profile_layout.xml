@@ -1,0 +1,159 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+
+    android:id="@+id/loginlayout"
+
+    android:layout_height="match_parent"
+    android:layout_width="match_parent"
+
+
+    android:orientation="vertical"
+    android:background="@drawable/sri_background_gradient"
+    >
+
+
+    <!-- VERTICAL layout -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+
+        android:background="@android:color/transparent"
+        >
+
+            <!-- HORIZONTAL layout -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+
+                android:background="#212d3a"
+                android:padding="10dp"
+                >
+
+                <!-- SRI LOGO -->
+                <ImageView
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+
+                    android:layout_gravity="center_vertical|left"
+
+                    android:background="@drawable/sri_logo"
+                    />
+
+                <!-- HORIZONTAL GAP -->
+                <View
+                    android:layout_width="0dp"
+                    android:layout_height="40dp"
+                    android:layout_weight="1"
+                    />
+
+                   <!-- LOGOUT -->
+                <Button
+                    android:id="@+id/profileLayout_logout_btn"
+                    android:layout_height="40dp"
+                    android:layout_width="110dp"
+
+                    android:layout_gravity="center_vertical|right"
+
+                    android:background="@drawable/sri_button_logout"
+
+                    android:text="LOGOUT"
+                    android:textColor="#FFF"
+                    android:textSize="12sp"
+                    android:textStyle="bold|normal"
+
+                    android:typeface="sans" />
+
+                </LinearLayout>
+
+
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    >
+
+    <FrameLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        >
+
+            <!-- PROFILE button -->
+            <ImageButton
+                android:id="@+id/profileLayout_editprofile_imgBtn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+
+                android:layout_gravity="center"
+
+                android:background="@drawable/edit_profile_no_text"
+
+                android:text="EDIT PROFILE"
+                android:textColor="#FFF"
+                android:textSize="12sp"
+                android:textStyle="bold|normal"
+
+                android:scaleType="fitXY"
+
+                android:typeface="sans" />
+
+            <TextView
+                android:id="@+id/profile_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="EDIT PROFILE"
+
+                android:layout_gravity="center_horizontal|center_vertical"
+
+                android:textColor="#FFF"
+                android:textSize="24sp"
+                android:textStyle="bold|normal"
+                android:typeface="sans"
+            />
+
+    </FrameLayout>
+
+
+    <FrameLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        >
+
+
+            <!-- WEIGH STATION NOTIFICATION button -->
+            <ImageButton
+                android:id="@+id/profileLayout_weighstationnotification_imgBtn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+
+                android:layout_gravity="center"
+
+                android:background="@drawable/weigh_station_no_text"
+
+                android:scaleType="fitXY"
+                />
+
+        <TextView
+            android:id="@+id/WEIGH_TOP_TEXT"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="WEIGH STATION\nNOTIFICATION"
+
+            android:gravity="center_horizontal"
+            android:layout_gravity="center_vertical|center_horizontal"
+
+            android:textColor="#FFF"
+            android:textSize="24sp"
+            android:textStyle="bold|normal"
+            android:typeface="sans"
+            />
+
+    </FrameLayout>
+
+</LinearLayout>
+
+    </LinearLayout>
+    </FrameLayout>

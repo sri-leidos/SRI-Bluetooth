@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector>
+    <item>
+        <family>
+            <nameset>
+                <name>sans-serif-light</name>
+            </nameset>
+            <fileset>
+                <file>Roboto-Light.ttf</file>
+                <file>Roboto-LightItalic.ttf</file>
+            </fileset>
+        </family>
+    </item>
+</selector>

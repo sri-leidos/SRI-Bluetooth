@@ -1,0 +1,246 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+
+    android:id="@+id/loginlayout"
+
+    android:layout_height="match_parent"
+    android:layout_width="match_parent"
+
+    android:paddingBottom="16dp"
+    android:background="@drawable/sri_background_gradient"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="36dp"
+    >
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:background="@android:color/transparent"
+        >
+
+        <!-- SRI logo -->
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:background="@android:color/transparent"
+            >
+
+            <ImageView
+                android:layout_width="fill_parent"
+                android:layout_height="100sp"
+                android:layout_alignParentTop="true"
+                android:layout_centerHorizontal="true"
+                android:background="@android:color/transparent"
+                android:src="@drawable/sri_logo" />
+    </LinearLayout>
+
+    <!-- vertical gap under SRI logo -->
+    <View
+        android:layout_width="0dp"
+            android:layout_height="50dp"
+            android:layout_weight="1"
+            />
+
+        <!-- username draw underline across display -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+
+            android:orientation="horizontal"
+            android:background="@drawable/sri_input_bottom_stroke"
+            >
+
+            <!-- user icon -->
+            <ImageView
+                android:layout_height="26sp"
+                android:layout_width="26sp"
+                android:layout_marginBottom="6dp"
+
+                android:src="@drawable/ic_user"
+
+                />
+
+            <!-- username field -->
+            <EditText
+                android:id="@+id/loginLayout_username_edtTxt"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+
+                android:layout_centerHorizontal="true"
+
+                android:background="@drawable/sri_input_bottom_stroke"
+
+                android:fontFamily="sans-serif-thin"
+                android:gravity="center_vertical|center_horizontal"
+
+                android:hint="username"
+
+                android:imeOptions="actionDone"
+                android:inputType="textPassword"
+
+                android:paddingBottom="10sp"
+                android:paddingTop="10sp"
+                android:singleLine="true"
+                android:textColor="#FFF"
+                android:textSize="20sp" />
+
+        </LinearLayout>
+
+        <!-- password underline across display -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+
+            android:orientation="horizontal"
+            android:background="@drawable/sri_input_bottom_stroke"
+            >
+
+            <!-- password icon -->
+            <ImageView
+                android:layout_height="26sp"
+                android:layout_width="26sp"
+
+                android:background="@android:color/transparent"
+
+                android:layout_gravity="bottom"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentRight="true"
+
+                android:layout_marginBottom="6dp"
+
+                android:src="@drawable/ic_lock"
+
+                />
+
+            <!-- password -->
+            <EditText
+                android:id="@+id/loginLayout_password_edtTxt"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+
+                android:layout_centerHorizontal="true"
+
+                android:background="@drawable/sri_input_bottom_stroke"
+
+                android:fontFamily="sans-serif-thin"
+                android:gravity="center_vertical|center_horizontal"
+
+                android:hint="password"
+
+                android:imeOptions="actionDone"
+                android:inputType="textPassword"
+
+                android:paddingBottom="10sp"
+                android:paddingTop="10sp"
+                android:singleLine="true"
+                android:textColor="#FFF"
+                android:textSize="20sp" />
+
+        </LinearLayout>
+
+
+        <!-- register sri user -->
+        <!-- underline across display -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+
+            android:orientation="vertical"
+            android:background="@android:color/transparent"
+
+            android:layout_gravity="center_horizontal|center_vertical"
+            >
+            <!-- register user -->
+        <Button
+            android:id="@+id/loginLayout_signin_btn"
+            android:layout_width="300sp"
+            android:layout_height="match_parent"
+
+            android:layout_marginTop="52dp"
+
+            android:layout_gravity="center_vertical|center_horizontal"
+            android:background="@drawable/sri_button_signin"
+
+            android:text="SIGN IN"
+            android:textColor="#FFF"
+            android:textSize="22sp"
+            android:textStyle="bold|normal"
+            android:typeface="sans" />
+    </LinearLayout>
+
+        <!-- vertical gap under SRI logo -->
+        <View
+            android:layout_width="0dp"
+            android:layout_height="50dp"
+            android:layout_weight="1"
+            />
+    <!-- signin -->
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+
+        android:orientation="vertical"
+        android:background="@android:color/transparent"
+        >
+        <!-- signin -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+
+            android:orientation="horizontal"
+            android:background="@android:color/transparent"
+           >
+            <!-- register user -->
+            <Button
+                android:id="@+id/loginLayout_forgotpassword_btn"
+                android:layout_width="wrap_content"
+                android:layout_height="20dp"
+
+                android:layout_marginTop="0dp"
+                android:layout_marginBottom="0dp"
+
+                android:layout_gravity="right"
+                android:gravity="right"
+
+                android:background="@drawable/sri_input_bottom_stroke_2"
+
+                android:text="Forgot password?"
+                android:textColor="#FFF"
+                android:textSize="14sp"
+                android:textStyle="normal"
+                android:typeface="sans" />
+
+            <!-- HORIZONTAL GAP -->
+            <View
+                android:layout_width="0dp"
+                android:layout_height="40dp"
+                android:layout_weight="1"
+                />
+
+            <!-- register user -->
+            <Button
+                android:id="@+id/loginLayout_signup_btn"
+                android:layout_width="wrap_content"
+                android:layout_height="20dp"
+
+                android:layout_marginTop="0dp"
+                android:layout_marginBottom="0dp"
+
+                android:layout_gravity="right"
+                android:gravity="right"
+
+                android:background="@drawable/sri_input_bottom_stroke_2"
+
+                android:text="New here? Sign Up"
+                android:textColor="#FFF"
+                android:textSize="14sp"
+                android:textStyle="normal"
+                android:typeface="sans" />
+        </LinearLayout>
+
+</LinearLayout>
+
+    </LinearLayout>
+</RelativeLayout>
+

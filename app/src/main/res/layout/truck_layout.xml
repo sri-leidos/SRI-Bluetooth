@@ -1,0 +1,397 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+
+    android:id="@+id/trucklayout"
+
+    android:background="@drawable/sri_background_gradient"
+
+    android:layout_width="match_parent"
+    android:layout_height="fill_parent"
+    android:layout_weight="5"
+
+    android:paddingTop="8dp"
+    android:paddingLeft="16dp"
+    android:paddingRight="16dp"
+    android:paddingBottom="16dp"
+
+    android:focusableInTouchMode="true"
+    >
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+
+        android:background="@android:color/transparent"
+        android:orientation="vertical"
+        >
+        <!-- Dummy item to prevent AutoCompleteTextView from receiving focus -->
+        <LinearLayout
+            android:focusable="true" android:focusableInTouchMode="true"
+            android:layout_width="0px" android:layout_height="0px"
+            />
+
+        <!-- :nextFocusUp and :nextFocusLeft have been set to the id of this component
+             to prevent the dummy from receiving focus again -->
+        <AutoCompleteTextView android:id="@+id/autotext"
+            android:layout_width="fill_parent" android:layout_height="wrap_content"
+            android:nextFocusUp="@id/autotext" android:nextFocusLeft="@id/autotext"
+            android:visibility="invisible"
+        android:height="0px"
+        />
+
+
+        <LinearLayout
+        android:id="@+id/truckLay_image_linLay"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_weight="5"
+
+        android:layout_centerHorizontal="true"
+
+        android:orientation="horizontal"
+        >
+
+            <ImageButton
+                android:id="@+id/truckLay_takeTruckImage_imgBtn"
+
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="5"
+
+                android:layout_gravity="center_horizontal"
+
+                android:text="UPDATE TRUCK PHOTO"
+                />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="6dp"
+
+            android:layout_centerHorizontal="true"
+            android:orientation="horizontal"
+        />
+
+
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="80dp"
+
+            android:layout_centerHorizontal="true"
+            android:orientation="horizontal"
+            >
+
+            <ToggleButton
+                android:id="@+id/truckLay_CDL_tglBt"
+
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_weight="5"
+
+                android:textOn="COMMERCIAL DRIVERS LICENSE"
+                android:textOff="DRIVERS LICENSE"
+                android:checked="true"
+                android:digits="ABCDEFGHIJKLMNOPQRSTUVWXYZ1234567890 "
+
+                android:background="@drawable/toggle_selector"
+                android:textColor="@drawable/toggle_color"
+                android:textSize="15sp"
+                />
+
+            <EditText
+                android:id="@+id/truckLay_CDL_edtTxt"
+
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_weight="5"
+
+                android:layout_alignParentBottom="true"
+                android:gravity="bottom"
+                android:digits="ABCDEFGHIJKLMNOPQRSTUVWXYZ1234567890 "
+                android:inputType="text"
+
+                android:hint="COMMERCIAL DRIVERS LICENSE"
+                android:textSize="25sp"
+                />
+
+            <EditText
+                android:id="@+id/truckLay_DL_edtTxt"
+
+                android:visibility="invisible"
+
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:layout_weight="0"
+
+                android:layout_alignParentBottom="true"
+                android:gravity="bottom"
+
+                android:digits="ABCDEFGHIJKLMNOPQRSTUVWXYZ1234567890 "
+                android:inputType="text"
+
+                android:hint="VIN"
+                android:textSize="25sp"
+                />
+        </LinearLayout>
+
+
+        <!-- VIN -->
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="6dp"
+
+            android:layout_centerHorizontal="true"
+            android:orientation="horizontal"
+            />
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_weight="5"
+
+            android:layout_centerHorizontal="true"
+
+            android:orientation="horizontal"
+            >
+
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_weight="5"
+
+                android:background="@drawable/rounded_corners_shape"
+                android:gravity="bottom"
+
+                android:digits="ABCDEFGHIJKLMNOPQRSTUVWXYZ1234567890 "
+                android:inputType="text"
+
+
+                android:text="VIN:"
+                android:textSize="15sp"
+                />
+
+            <EditText
+                android:id="@+id/truckLay_VIN_edtTxt"
+
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_weight="5"
+
+                android:layout_alignParentBottom="true"
+                android:gravity="bottom"
+
+                android:digits="ABCDEFGHIJKLMNOPQRSTUVWXYZ1234567890 "
+                android:inputType="text"
+
+
+                android:hint="VIN"
+                android:textSize="25sp"
+                />
+        </LinearLayout>
+
+
+
+
+<!-- -->
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="6dp"
+
+            android:layout_centerHorizontal="true"
+            android:orientation="horizontal"
+            />
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_weight="5"
+
+            android:layout_centerHorizontal="true"
+
+            android:orientation="horizontal"
+            >
+
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_weight="5"
+
+                android:background="@drawable/rounded_corners_shape"
+                android:gravity="bottom"
+
+                android:digits="ABCDEFGHIJKLMNOPQRSTUVWXYZ1234567890 "
+                android:inputType="text"
+
+
+                android:text="USDOT:"
+                android:textSize="15sp"
+                />
+
+            <EditText
+                android:id="@+id/truckLay_USDOT_edtTxt"
+
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_weight="5"
+
+                android:layout_alignParentBottom="true"
+                android:gravity="bottom"
+
+                android:digits="ABCDEFGHIJKLMNOPQRSTUVWXYZ1234567890 "
+                android:inputType="text"
+
+
+                android:hint="USDOT"
+                android:textSize="25sp"
+                />
+        </LinearLayout>
+
+
+
+        <!-- new license -->
+
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="6dp"
+
+            android:layout_centerHorizontal="true"
+            android:orientation="horizontal"
+            />
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+
+            android:layout_centerHorizontal="true"
+
+            android:orientation="horizontal"
+            >
+
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_weight="5"
+
+                android:background="@drawable/rounded_corners_shape"
+                android:gravity="bottom"
+
+                android:digits="ABCDEFGHIJKLMNOPQRSTUVWXYZ1234567890 "
+                android:inputType="text"
+
+
+                android:text="LICENSE:"
+                android:textSize="15sp"
+                />
+
+            <EditText
+                android:id="@+id/truckLay_LP_edtTxt"
+
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_weight="5"
+
+                android:layout_alignParentBottom="true"
+                android:gravity="bottom"
+
+                android:digits="ABCDEFGHIJKLMNOPQRSTUVWXYZ1234567890 "
+                android:inputType="text"
+
+
+                android:hint="LICENSE"
+                android:textSize="25sp"
+                />
+        </LinearLayout>
+
+
+
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="6dp"
+
+            android:layout_centerHorizontal="true"
+            android:orientation="horizontal"
+            />
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_weight="5"
+
+            android:layout_centerHorizontal="true"
+
+            android:orientation="horizontal"
+            >
+
+            <Button
+                android:id="@+id/truckLay_saveTruckInfo_btn"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_weight="5"
+
+                android:background="@drawable/save_truck_button"
+                android:text="Save"
+                />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="6dp"
+
+            android:layout_centerHorizontal="true"
+            android:orientation="horizontal"
+            />
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_weight="5"
+
+            android:layout_centerHorizontal="true"
+
+            android:orientation="horizontal"
+            >
+
+            <Button
+                android:id="@+id/truckLay_launchBT_btn"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_weight="5"
+
+                android:background="@drawable/bluetooth_button"
+                android:text="Bluetooth" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="6dp"
+
+            android:layout_centerHorizontal="true"
+            android:orientation="horizontal"
+            />
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_weight="5"
+
+            android:layout_centerHorizontal="true"
+
+            android:orientation="horizontal"
+            >
+
+            <Button
+                android:id="@+id/truckLay_redGreen_btn"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_weight="5"
+
+                android:background="@drawable/bluetooth_button"
+                android:text="WEIGH CAGE" />
+        </LinearLayout>
+    </LinearLayout>
+
+</ScrollView>

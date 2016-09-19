@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="srimobile.aspen.leidos.com.sri" >
+
+    <uses-sdk android:minSdkVersion="15" />
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.BLUETOOTH" />
+    <uses-permission android:name="android.permission.BLUETOOTH_ADMIN" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.READ_LOGS" />
+    <uses-permission android:name="android.permission.WR" />
+    <uses-permission android:name="android.permission.WRITE_SETTINGS"/>
+    <uses-permission android:name="android.permission.SET_DEBUG_APP"/>
+
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" android:maxSdkVersion="19" />
+
+    <application
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:screenOrientation="portrait"
+
+        android:theme="@style/AppTheme" >
+        <activity
+            android:name=".activity.TruckSmartParking"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait"
+
+            >
+        </activity>
+
+        <activity
+            android:name=".activity.ProfileActivity"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait"
+        >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+
+        </activity>
+
+        <!--
+        <activity
+        android:name=".activity.TruckSmartParking"
+        android:label="@string/app_name"
+        android:screenOrientation="portrait"
+        />
+        -->
+
+        <!--<activity-->
+        <!--android:name=".activity.LoginNewActivity"-->
+        <!--android:label="@string/app_name"-->
+        <!--android:screenOrientation="portrait"-->
+        <!--/>-->
+
+        <activity
+            android:name=".activity.LoginRegisterActivity"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait"
+        />
+
+        <activity
+            android:name=".activity.RedGreenSignalActivity"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.TruckActivity"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait"
+            />
+        <activity
+            android:name=".activity.GeoFenceActivity"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.dialog.TruckPhotoFromCameraActivity"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.SriBlutoothConnector"
+            android:label="@string/app_name" />
+
+        <service android:name=".blutooth.OBUBluetoothService" />
+        <service android:name=".gps.GPSTracker" />
+
+    </application>
+
+</manifest>

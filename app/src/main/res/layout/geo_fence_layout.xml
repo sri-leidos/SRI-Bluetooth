@@ -1,0 +1,270 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    android:paddingBottom="16dp"
+    android:paddingLeft="16dp"
+    android:paddingRight="16dp"
+    android:paddingTop="16dp">
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="50dp"
+            android:layout_centerHorizontal="true"
+            android:orientation="horizontal"
+            android:padding="5dp">
+
+            <TextView
+                android:layout_width="140dp"
+                android:layout_height="match_parent"
+                android:layout_alignParentBottom="true"
+                android:gravity="bottom"
+                android:paddingBottom="10dp"
+                android:text="Test Run"
+                android:textSize="15sp" />
+
+
+            <EditText
+                android:id="@+id/txtTestRun"
+                android:layout_width="fill_parent"
+                android:layout_height="match_parent"
+                android:layout_alignParentBottom="true"
+                android:gravity="bottom"
+                android:paddingBottom="10dp"
+                android:textSize="12sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="50dp"
+            android:layout_centerHorizontal="true"
+            android:orientation="horizontal"
+            android:padding="5dp">
+
+            <TextView
+                android:layout_width="140dp"
+                android:layout_height="match_parent"
+                android:layout_alignParentBottom="true"
+                android:gravity="bottom"
+                android:paddingBottom="10dp"
+                android:text="Expected Result"
+                android:textSize="15sp" />
+
+
+            <EditText
+                android:id="@+id/txtExpectedResult"
+                android:layout_width="fill_parent"
+                android:layout_height="match_parent"
+                android:layout_alignParentBottom="true"
+                android:gravity="bottom"
+                android:paddingBottom="10dp"
+                android:textSize="12sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="50dp"
+            android:layout_centerHorizontal="true"
+            android:orientation="horizontal"
+            android:padding="5dp">
+
+            <TextView
+                android:layout_width="140dp"
+                android:layout_height="match_parent"
+                android:layout_alignParentBottom="true"
+                android:gravity="bottom"
+                android:paddingBottom="10dp"
+                android:text="GeoFence"
+                android:textSize="15sp" />
+
+            <EditText
+                android:id="@+id/txtPostToWebService"
+                android:layout_width="fill_parent"
+                android:layout_height="match_parent"
+                android:layout_alignParentBottom="true"
+                android:gravity="bottom"
+                android:paddingBottom="10dp"
+                android:textSize="15sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="50dp"
+            android:layout_centerHorizontal="true"
+            android:orientation="horizontal"
+            android:padding="5dp">
+
+            <TextView
+                android:layout_width="140dp"
+                android:layout_height="match_parent"
+                android:layout_alignParentBottom="true"
+                android:gravity="bottom"
+                android:paddingBottom="10dp"
+                android:text="Post to Web Service:"
+                android:textSize="15sp" />
+
+            <EditText
+                android:id="@+id/geoFence_truckDataSent"
+                android:layout_width="fill_parent"
+                android:layout_height="match_parent"
+                android:layout_alignParentBottom="true"
+                android:gravity="bottom"
+                android:paddingBottom="10dp"
+                android:textSize="15sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="50dp"
+            android:layout_centerHorizontal="true"
+            android:orientation="horizontal"
+            android:padding="5dp">
+
+            <TextView
+                android:layout_width="140dp"
+                android:layout_height="match_parent"
+                android:layout_alignParentBottom="true"
+                android:gravity="bottom"
+                android:paddingBottom="10dp"
+                android:text="Latitude:"
+                android:textSize="15sp" />
+
+            <EditText
+                android:id="@+id/geoFence_latitude_geo_EdtFld"
+                android:layout_width="fill_parent"
+                android:layout_height="match_parent"
+                android:layout_alignParentBottom="true"
+                android:gravity="bottom"
+                android:paddingBottom="10dp"
+                android:textSize="15sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="50dp"
+            android:layout_centerHorizontal="true"
+            android:orientation="horizontal"
+            android:padding="5dp">
+
+            <TextView
+                android:layout_width="140dp"
+                android:layout_height="match_parent"
+                android:layout_alignParentBottom="true"
+                android:gravity="bottom"
+                android:paddingBottom="10dp"
+                android:text="Longitude:"
+                android:textSize="15sp" />
+
+            <EditText
+                android:id="@+id/geoFence_longitude_geo_EdtFld"
+                android:layout_width="fill_parent"
+                android:layout_height="match_parent"
+                android:layout_alignParentBottom="true"
+                android:gravity="bottom"
+                android:paddingBottom="10dp"
+                android:textSize="15sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="50dp"
+            android:layout_centerHorizontal="true"
+            android:background="#00000000"
+            android:orientation="horizontal"
+            android:padding="5dp">
+
+            <Button
+                android:id="@+id/btnRunTest1"
+                android:layout_width="65dp"
+                android:layout_height="match_parent"
+                android:text="T1"
+                android:onClick="onClickRunTest1" />
+            <Button
+                android:id="@+id/btnRunTest2"
+                android:layout_width="65dp"
+                android:layout_height="match_parent"
+                android:text="T2"
+                android:onClick="onClickRunTest2" />
+            <Button
+                android:id="@+id/btnRunTest2d"
+                android:layout_width="65dp"
+                android:layout_height="match_parent"
+                android:text="T2D"
+                android:onClick="onClickRunTest2" />
+            <Button
+                android:id="@+id/btnRunTest3"
+                android:layout_width="65dp"
+                android:layout_height="match_parent"
+                android:text="T3"
+                android:onClick="onClickRunTest3" />
+            <Button
+                android:id="@+id/btnRunTest4"
+                android:layout_width="65dp"
+                android:layout_height="match_parent"
+                android:text="T4"
+                android:onClick="onClickRunTest4" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="50dp"
+            android:layout_centerHorizontal="true"
+            android:background="#00000000"
+            android:orientation="horizontal"
+            android:padding="5dp">
+
+            <Button
+                android:id="@+id/btnRunTest4D"
+                android:layout_width="65dp"
+                android:layout_height="match_parent"
+                android:text="T4D"
+                android:onClick="onClickRunTest4" />
+            <Button
+                android:id="@+id/btnRunTest5"
+                android:layout_width="65dp"
+                android:layout_height="match_parent"
+                android:text="T5"
+                android:onClick="onClickRunTest5" />
+            <Button
+                android:id="@+id/btnRunTest6"
+                android:layout_width="65dp"
+                android:layout_height="match_parent"
+                android:text="T6"
+                android:onClick="onClickRunTest6" />
+            <Button
+                android:id="@+id/btnRunTest7"
+                android:layout_width="65dp"
+                android:layout_height="match_parent"
+                android:text="T7"
+                android:onClick="onClickRunTest7" />
+            <Button
+                android:id="@+id/btnRunTest8"
+                android:layout_width="65dp"
+                android:layout_height="match_parent"
+                android:text="T8"
+                android:onClick="onClickRunTest8" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="100dp"
+            android:layout_centerHorizontal="true"
+            android:background="#00000000"
+            android:orientation="horizontal"
+            android:padding="5dp">
+
+            <Button
+                android:id="@+id/btnRunAllTests"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="Clear"
+                android:onClick="onClick" />
+        </LinearLayout>
+    </LinearLayout>
+</ScrollView>
